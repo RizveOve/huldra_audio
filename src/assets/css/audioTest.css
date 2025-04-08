@@ -1,0 +1,123 @@
+.container {
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 800px;
+    background-color: #fff;
+  }
+ 
+  .content {
+    margin-top: 20px;
+  }
+  
+  .audio-player {
+    margin: 20px auto;
+    width: 100%;
+    max-width: 500px;
+  }
+  
+  .audio-visualizer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    padding: 20px;
+  }
+  
+  .play-button {
+    font-size: 30px;
+    color: #00bfff;
+    margin-right: 20px;
+  }
+  
+  .visualizer-bars {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    width: 100%;
+    height: 50px;
+  }
+  
+  .bar {
+    background-color: #00bfff;
+    width: 5px;
+    height: 100%;
+    margin: 0 2px;
+    animation: bounce 1s infinite;
+  }
+  
+  .bar:nth-child(2) { height: 70%; animation-delay: 0.1s; }
+  .bar:nth-child(3) { height: 80%; animation-delay: 0.2s; }
+  .bar:nth-child(4) { height: 60%; animation-delay: 0.3s; }
+  .bar:nth-child(5) { height: 90%; animation-delay: 0.4s; }
+  .bar:nth-child(6) { height: 75%; animation-delay: 0.5s; }
+  .bar:nth-child(7) { height: 85%; animation-delay: 0.6s; }
+  .bar:nth-child(8) { height: 65%; animation-delay: 0.7s; }
+  
+  @keyframes bounce {
+    0%, 100% {
+      transform: scaleY(1);
+    }
+    50% {
+      transform: scaleY(0.5);
+    }
+  }
+  
+  .rating-section {
+    margin: 20px 0;
+  }
+  
+  .rating-section input {
+    padding: 10px;
+    font-size: 16px;
+    width: 100px;
+    margin: 0 auto;
+  }
+  
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .previous, .alternative, .next {
+    padding: 10px 20px;
+    background-color: #ffcc00;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .previous:hover, .alternative:hover, .next:hover {
+    background-color: #e6b800;
+  }
+ /* Likert scale */
+.likert-scale {
+    display: flex;
+    justify-content: space-between;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 10px;
+  }
+  
+  .likert-item {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .likert-item input[type="radio"] {
+    margin-bottom: 8px;
+  }
+  
+  .likert-number {
+    font-size: 16px;
+    font-weight: bold;
+    color: #555;
+  }
+  
+  .likert-item input[type="radio"]:checked + .likert-number {
+    color: #007bff; /* Highlight selected option */
+  }
+  

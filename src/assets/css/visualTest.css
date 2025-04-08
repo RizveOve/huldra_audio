@@ -1,0 +1,47 @@
+.visualTest {
+    height: 100%;
+    overflow-y: auto;
+    text-align: center;
+    padding: 0 0.8em 0.8em 0.8em;
+  }
+
+  .mainArea{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+  }
+  .visual-test-title {
+    font-weight: 700;
+    font-size: 2.5em;
+  }
+  .visual-test-palates {
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+  }
+  .visual-test-palates img{
+    width: 300px;
+  }
+  .visual-test-palates input{
+    width: 400px;
+    margin: 0 5px 0 60px;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 7px;
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.3);
+    filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.3));
+  }
+  .visual-test-palates button{
+    height: 40px;
+    background: #ffbd03;
+    outline: none;
+    border: 1px solid wheat;
+    font-weight: 600;
+    border-radius: 5px;
+  }

@@ -1,0 +1,77 @@
+/* contrastTest.css */
+.container {
+  width: 90%;
+  max-width: 800px;
+  margin: auto;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  color: #333;
+}
+
+
+
+.content-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  padding: 20px 0;
+}
+
+.color-row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.color-bar {
+  display: flex;
+  width: 100%;
+  margin-bottom: 10px;
+  height: 40px;
+}
+
+.color {
+  height: 100%;
+  border-radius: 1px;
+}
+
+/* Specific Colors for each block */
+.red1 { background-color: #FF0000; width: 20%; }
+.red2 { background-color: #FF3333; width: 20%; }
+.red3 { background-color: #FF6666; width: 20%; }
+.red4 { background-color: #FF9999; width: 20%; }
+.red5 { background-color: #FFCCCC; width: 20%; }
+
+.yellow1 { background-color: #FFFF00; width: 33.33%; }
+.yellow2 { background-color: #FFFF66; width: 33.33%; }
+.yellow3 { background-color: #FFFF99; width: 33.33%; }
+
+.green1 { background-color: #00FF00; width: 33.33%; }
+.green2 { background-color: #66FF66; width: 33.33%; }
+.green3 { background-color: #99FF99; width: 33.33%; }
+
+.blue1 { background-color: #0000FF; width: 25%; }
+.blue2 { background-color: #3333FF; width: 25%; }
+.blue3 { background-color: #6666FF; width: 25%; }
+.blue4 { background-color: #9999FF; width: 25%; }
+
+/* Question section */
+.question h2 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.options label {
+  display: block;
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+.options input[type="radio"] {
+  margin-right: 5px;
+}
+.visual-test-title {
+  font-weight: 700;
+  font-size: 2.5em;
+}
+

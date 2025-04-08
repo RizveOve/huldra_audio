@@ -1,0 +1,77 @@
+/* General container styling */
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+h1{
+  font-size: 60px;
+  margin-bottom: 30px;
+}
+
+
+.id {
+  font-size: 12px;
+  color: gray;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Vertical Emoji Scale */
+.emoji-scale-vertical {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  margin-top: 5px;
+}
+
+.emoji-item-vertical {
+  display: flex;
+  align-items: center;
+  padding: 2px;
+  margin: 2px 0;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.emoji {
+  font-size: 40px;
+  margin-right: 10px;
+}
+
+.emoji-note {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.emoji-item-vertical.selected {
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding:1px 8px;
+}
+
+/* Footer */
+.footer {
+  margin-top: 40px;
+}
+
+.footer button {
+  padding: 10px 20px;
+  margin: 10px;
+  background-color: #ffc107;
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.footer button:hover {
+  background-color: #e0a800;
+}

@@ -242,14 +242,7 @@ const fetchCases = async (configExists, path, cases, shuffle) => {
 };
 
 export {
-  getFirebaseApp,
-  anonymousAuthentication,
-  getStorageReference,
-  listfolders,
-  getFolderReference,
-  getAssetDownloadUrl,
-  getFileDownloadUrl,
-  fetchJsonAttributeValue,
-  listFiles,
-  fetchCases,
+  anonymousAuthentication, fetchCases, fetchJsonAttributeValue, getAssetDownloadUrl,
+  getFileDownloadUrl, getFirebaseApp, getFolderReference, getStorageReference, listFiles, listfolders
 };
+

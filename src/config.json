@@ -1,11 +1,9 @@
 {
- 
   "REACT_APP_warning": {
     "warningMessage": "Please view this page on a device with a screen resolution of at least 1200 x 800.",
     "title": "Huldra"
-  
   },
-"REACT_APP_home": {
+  "REACT_APP_home": {
     "title": "Huldra: Auditory Test",
     "introText": "",
     "signupText": "If you don't have a participant ID, you can have one by clicking the button below.",
@@ -36,10 +34,9 @@
       "showTooltip": true,
       "tooltipMessage": "This field is mandatory."
     },
-   "Q7": {
-    "label": "Do you experience any hearing difficulties that could affect your ability to listen?"
-  }
-,
+    "Q7": {
+      "label": "Do you experience any hearing difficulties that could affect your ability to listen?"
+    },
     "Q8": {
       "label": "I understand that my participation in this study is voluntary, my responses will remain confidential "
     },
@@ -69,7 +66,7 @@
         {
           "title": "",
           "text": "Afterward, you will move on to the main survey, which focuses on basic listening tasks. In each task, you will hear a short audio passage describing a scene or situation. Some audio clips might have clear, undistorted sound, Contain noticeable distortion or lower quality, Include loud background noise. You will then choose one of two images that you think best matches what was described. This lets us see whether audio clarity and background noise influence how well participants can interpret the content.",
-         
+
           "imagePath": "",
           "imageClassName": "explanation-background-image",
           "imageAlternativeText": "sample-image",
@@ -100,20 +97,20 @@
       ]
     }
   ],
-"REACT_APP_demonstration": [
-  {
-    "textBefore": "",
-  
-    "textAfter": "",
-    "hasImage": true,
-    "imagePath": "/gallery/image-sample1.png",
-    "imageClassName": "demonstration-image"
-  }
-],
+  "REACT_APP_demonstration": [
+    {
+      "textBefore": "",
+
+      "textAfter": "",
+      "hasImage": true,
+      "imagePath": "/gallery/image-sample1.png",
+      "imageClassName": "demonstration-image"
+    }
+  ],
 
   "REACT_APP_test": [
-    {"testType": "audioTest", "audioTest": true}, 
-    {"testType": "backgroundNoiseTest", "backgroundNoiseTest": true}
+    { "testType": "audioTest", "audioTest": true },
+    { "testType": "backgroundNoiseTest", "backgroundNoiseTest": true }
   ],
   "REACT_APP_caseImage": {
     "caseImageColumnLeft": {
@@ -245,19 +242,17 @@
           "id": "Q3",
           "label": "How difficult was the listening task for your current Norwegian language level?",
           "optional": false,
-          "choices": ["Very easy", "Manageable", "Hard", "Extremely difficult" ],
+          "choices": ["Very easy", "Manageable", "Hard", "Extremely difficult"],
           "hasCommentBox": false,
           "commentBoxLabel": "Comment to the multiple choice question Q3."
         },
-       
-        
+
         {
           "questionType": "likert",
           "id": "Q2",
           "label": "Likert questions (0= very difficult, 10= Very easy)",
           "optional": false,
           "likertQuestions": [
-            
             {
               "question": "How difficult it was to find the answer because of distorted audio?",
               "size": 10,
@@ -273,7 +268,6 @@
               "size": 10,
               "label": "How challenging was it for you to find the correct answer, given your current language level?"
             }
-
           ]
         },
         {
@@ -283,7 +277,6 @@
           "optional": true,
           "showTooltip": false
         }
-        
       ]
     }
   },
@@ -300,12 +293,20 @@
     "caseImageViewDetailsMandatory": false,
     "caseHybridViewDetailsMandatory": false,
     "caseOrder": {
-      "cases": [ "hybrid-case1", "hybrid-case2", "hybrid-case3a", "hybrid-case4a", "hybrid-case5a","hybrid-case6a", "hybrid-case7"],
+      "cases": [
+        "hybrid-case1",
+        "hybrid-case2",
+        "hybrid-case3a",
+        "hybrid-case4a",
+        "hybrid-case5a",
+        "hybrid-case6a",
+        "hybrid-case7"
+      ],
       "shuffle": ""
     },
     "storage": {
       "assetsStorageType": "local",
-      "responsesStorageType": "local"
+      "responsesStorageType": "firebase"
     },
     "outputJson": ["SoftwareInfo", "SessionEvents"],
     "color": {
@@ -327,6 +328,9 @@
       "labelSummaryAndFeedback": "Summary and Feedback"
     },
     "loginOption": "anonymousWithID",
-    "approvedParticipantIDs": ["sample-participant-id-1", "sample-participant-id-2"]
+    "approvedParticipantIDs": [
+      "sample-participant-id-1",
+      "sample-participant-id-2"
+    ]
   }
 }

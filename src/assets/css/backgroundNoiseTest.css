@@ -7,11 +7,10 @@
   font-family: Arial, sans-serif;
 }
 
-h1{
+h1 {
   font-size: 60px;
   margin-bottom: 30px;
 }
-
 
 .id {
   font-size: 12px;
@@ -23,37 +22,50 @@ h1{
   font-weight: bold;
 }
 
-/* Vertical Emoji Scale */
+/* == Emoji Scale via MCQ component == */
 .emoji-scale-vertical {
   display: flex;
   flex-direction: column;
-  align-items: left;
+  align-items: center; /* center the column under the heading */
+  gap: 1rem; /* vertical space between each option */
   margin-top: 5px;
 }
 
-.emoji-item-vertical {
+/* hide the browser’s default radio dot */
+.emoji-scale-vertical .form-check-input {
+  display: none;
+}
+
+/* make the entire label clickable and lay out inline */
+.emoji-scale-vertical .form-check-label {
   display: flex;
-  align-items: center;
-  padding: 2px;
-  margin: 2px 0;
+  align-items: center; /* vertically center emoji + text */
   cursor: pointer;
-  transition: background-color 0.3s;
 }
 
-.emoji {
-  font-size: 40px;
-  margin-right: 10px;
+/* style the inner block (your .emoji-item-vertical) */
+.emoji-scale-vertical .form-check-label .emoji-item-vertical {
+  display: flex;
+  flex-direction: row; /* emoji and note on same line */
+  align-items: center;
+  gap: 0.5rem; /* space between emoji and text */
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  background-color: transparent;
+  transition: background-color 0.2s ease;
 }
 
-.emoji-note {
-  font-size: 18px;
-  font-weight: bold;
+/* when the radio is checked, color the block via the inline CSS var */
+.emoji-scale-vertical
+  .form-check-input:checked
+  + .form-check-label
+  .emoji-item-vertical {
+  background-color: var(--emoji-color);
 }
 
-.emoji-item-vertical.selected {
-  background-color: rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
-  padding:1px 8px;
+/* Emoji font sizing */
+.emoji-scale-vertical .emoji {
+  font-size: 2rem;
 }
 
 /* Footer */

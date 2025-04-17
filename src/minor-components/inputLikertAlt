@@ -17,9 +17,7 @@ const InputLikert = ({
 }) => {
   // get the offset of the saved answer from local storage, so as to repopulate the answer
   const getSavedAnswerOffset = (index) => {
-    const FeedbackFormAnswers = JSON.parse(
-      localStorage.getItem("FeedbackFormAnswers")
-    );
+    const FeedbackFormAnswers = JSON.parse(localStorage.getItem("FeedbackFormAnswers"));
     if (!FeedbackFormAnswers) {
       return false;
     }
@@ -38,13 +36,10 @@ const InputLikert = ({
     <div id={id} className={likertWrapperClassName}>
       <p className={titleClassName}>
         {showTooltip && (
-          <Icon
-            tooltipMessage={tooltipMessage}
-            className=" fa fa-info-circle form-tooltip ml-1"
-          />
+          <Icon tooltipMessage={tooltipMessage} className=" fa fa-info-circle form-tooltip ml-1" />
         )}{" "}
         {label}
-        {optional && <span className="input-likert-optional-text"> </span>}{" "}
+        {optional && <span className="input-likert-optional-text"> (optional)</span>}{" "}
         {!optional && <Asterisk />}
       </p>
       {likertQuestions.map((e, index = 0) => {
@@ -58,9 +53,7 @@ const InputLikert = ({
         }
 
         likertOptions.onChange = (val) => {
-          const FeedbackFormAnswers = JSON.parse(
-            localStorage.getItem("FeedbackFormAnswers")
-          );
+          const FeedbackFormAnswers = JSON.parse(localStorage.getItem("FeedbackFormAnswers"));
           let answers = {};
           if (FeedbackFormAnswers) {
             answers = { ...FeedbackFormAnswers };

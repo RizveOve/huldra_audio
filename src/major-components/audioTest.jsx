@@ -1,41 +1,43 @@
-import React, { useState } from "react";
+import React from "react";
 import "../assets/css/audioTest.css";
 import "../assets/css/demonstration.css";
+
 import testAudio from "../img/AudioTest.mp3";
+import InputLikert from "../minor-components/inputLikert";
 
 const AudioTest = () => {
-  const [rating, setRating] = useState("");
-
-  const handleChange = (event) => {
-    const selectedValue = event.target.value;
-    setRating(selectedValue); // Update the state with the selected value
-    localStorage.setItem("audioRating", selectedValue); // Save the value in local storage
-  };
+  const likertQuestions = [
+    {
+      label: "Rate the audio quality from 1 (very poor) to 10 (excellent)",
+      size: 10,
+    },
+  ];
 
   return (
     <div className="container">
       <div className="content">
         <div className="audio-player">
-          {/* Audio player using the provided external audio link */}
           <audio controls src={testAudio}>
             Your browser does not support the audio element.
           </audio>
         </div>
 
-        <div className="rating-section">
-          <h2>Rate the audio quality from 1 to 10</h2>
-
-          {/* Dropdown */}
-          <select value={rating} onChange={handleChange} className="dropdown">
-            <option value="" disabled>
-              Select a rating
-            </option>
-            {Array.from({ length: 10 }, (_, i) => (
-              <option key={i + 1} value={i + 1}>
-                {i + 1}
-              </option>
-            ))}
-          </select>
+        <div
+          className="rating-section"
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            // if you need vertical centering, you can also add alignItems: "center"
+          }}
+        >
+          <InputLikert
+            id="audio-quality"
+            label="How would you rate the audio quality?"
+            likertWrapperClassName="likert-centered"
+            titleClassName="radio-question"
+            optional={true} // ← this suppresses the Asterisk
+            likertQuestions={likertQuestions}
+          />
         </div>
       </div>
 

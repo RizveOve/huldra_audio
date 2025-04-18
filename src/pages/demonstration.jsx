@@ -11,7 +11,9 @@ import { logSessionInfo } from "../utils/localStorage";
 
 const Demonstration = () => {
   const demoId = useParams().demoId;
-  const REACT_APP_demonstration = fetchConfigVariable(`REACT_APP_demonstration`)[demoId - 1];
+  const REACT_APP_demonstration = fetchConfigVariable(
+    `REACT_APP_demonstration`
+  )[demoId - 1];
 
   logSessionInfo(false, `demonstration${demoId}`);
   conditionalPushToBucket();
@@ -30,11 +32,14 @@ const Demonstration = () => {
         />
       )}
       <p style={{ textAlign: "left", paddingLeft: "60px" }}>
-        In the following, In this survey, you will complete a series of basic listening tasks. Each
-        task works as follows:
+        In the following, In this survey, you will complete a series of basic
+        listening tasks. Each task works as follows:
       </p>
       <ul style={{ textAlign: "left" }}>
-        <li>You will hear a short audio description of a scene or situation.</li>
+        <li>
+          You will hear a short audio description of a scene or situation.
+        </li>
+        <li>You will be allowed to play the audio only once.</li>
         <li>
           Some audio clips might:
           <ul>
@@ -43,12 +48,15 @@ const Demonstration = () => {
             <li>Include loud background noise.</li>
           </ul>
         </li>
-        <li>Select the image that best matches the content described in the audio.</li>
+        <li>
+          Select the image that best matches the content described in the audio.
+        </li>
       </ul>
       <p style={{ textAlign: "left", paddingLeft: "60px" }}>
-        We ask you to rank the answers based on which one you find most appropriate. Please
-        carefully look at the image and both explanations before you provide your ranking. Once you
-        click on one of the explanations, your ranking will appear on the right.
+        We ask you to rank the answers based on which one you find most
+        appropriate. Please carefully look at the image and both explanations
+        before you provide your ranking. Once you click on one of the
+        explanations, your ranking will appear on the right.
       </p>
       {REACT_APP_demonstration["hasImage"] && (
         <RankedImage

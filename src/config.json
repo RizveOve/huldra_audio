@@ -67,7 +67,7 @@
           "title": "",
           "text": "Afterward, you will move on to the main survey, which focuses on basic listening tasks. In each task, you will hear a short audio passage describing a scene or situation. Some audio clips might have clear, undistorted sound, Contain noticeable distortion or lower quality, Include loud background noise. You will then choose one of two images that you think best matches what was described. This lets us see whether audio clarity and background noise influence how well participants can interpret the content.",
 
-          "imagePath": "",
+          "imagePath": "/gallery/image-background.png",
           "imageClassName": "explanation-background-image",
           "imageAlternativeText": "sample-image",
           "descriptionClassName": "background-single-block-description-content",
@@ -82,19 +82,7 @@
       "sectionClassName": "background-section",
       "sectionTitleClassName": "background-section-title",
       "sectionTextClassName": "background-text-content",
-      "sectionContent": [
-        {
-          "title": "",
-          "text": "",
-          "className": "background-single-block",
-          "imagePath": "",
-          "imageClassName": "explanation-background-image",
-          "imageAlternativeText": "sample-image",
-          "descriptionClassName": "background-single-block-description-content",
-          "titleClassName": "background-single-block-description-label",
-          "textClassName": "background-text-content"
-        }
-      ]
+      "sectionContent": []
     }
   ],
   "REACT_APP_demonstration": [
@@ -300,6 +288,7 @@
         "hybrid-case4a",
         "hybrid-case5a",
         "hybrid-case6a",
+
         "hybrid-case7"
       ],
       "shuffle": ""

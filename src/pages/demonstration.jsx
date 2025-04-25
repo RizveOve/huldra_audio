@@ -32,24 +32,22 @@ const Demonstration = () => {
         />
       )}
       <p style={{ textAlign: "left", paddingLeft: "60px" }}>
-        In the following, In this survey, you will complete a series of basic
-        listening tasks. Each task works as follows:
+        In the following, you will complete a series of basic listening tasks.
+        Each task works as follows:
       </p>
       <ul style={{ textAlign: "left" }}>
-        <li>
-          You will hear a short audio description of a scene or situation.
-        </li>
-        <li>You will be allowed to play the audio only once.</li>
+        <li>You will hear a short audio description of a scene or situation</li>
+        <li>You will be allowed to play the audio only once</li>
         <li>
           Some audio clips might:
           <ul>
-            <li>Have clear, undistorted sound.</li>
-            <li>Contain noticeable distortion or lower quality.</li>
-            <li>Include loud background noise.</li>
+            <li>Have clear, undistorted sound</li>
+            <li>Contain noticeable distortion or lower quality</li>
+            <li>Include loud background noise</li>
           </ul>
         </li>
         <li>
-          Select the image that best matches the content described in the audio.
+          Select the image that best matches the content described in the audio
         </li>
       </ul>
       <p style={{ textAlign: "left", paddingLeft: "60px" }}>

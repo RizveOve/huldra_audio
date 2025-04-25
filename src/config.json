@@ -30,12 +30,12 @@
       "tooltipMessage": "This field is mandatory."
     },
     "Q6": {
-      "label": "Which device are you using to listen to the audio?",
+      "label": "What type of audio device are you using?",
       "showTooltip": true,
       "tooltipMessage": "This field is mandatory."
     },
     "Q7": {
-      "label": "Do you experience any hearing difficulties that could affect your ability to listen?"
+      "label": "Do you experience any hearing difficulties?"
     },
     "Q8": {
       "label": "I understand that my participation in this study is voluntary, my responses will remain confidential "
@@ -58,14 +58,14 @@
     },
     {
       "sectionTitle": "",
-      "sectionText": "Welcome to our user study! We are exploring how different audio conditions may affect the way people understand and respond to spoken information. Before you begin, you will complete a short pre-survey audio test, where you will listen to a quick audio clip and rate its clarity and any background noise. This step helps us understand your listening environment and device setup.",
+      "sectionText": "Welcome to our user study! We are exploring how different audio conditions may affect the way people understand and respond to spoken information. Before you begin, you will complete a short pre-survey audio test, where you will listen to an audio clip and rate its clarity and any background noise. This step helps us understand your listening environment and device setup.",
       "sectionClassName": "background-section",
       "sectionTitleClassName": "background-section-title",
       "sectionTextClassName": "background-text-content",
       "sectionContent": [
         {
           "title": "",
-          "text": "Afterward, you will move on to the main survey, which focuses on basic listening tasks. In each task, you will hear a short audio passage describing a scene or situation. Some audio clips might have clear, undistorted sound, Contain noticeable distortion or lower quality, Include loud background noise. You will then choose one of two images that you think best matches what was described. This lets us see whether audio clarity and background noise influence how well participants can interpret the content.",
+          "text": "Afterwards, you will move on to the main survey, which focuses on basic listening tasks. In each task, you will hear a short audio passage describing a scene or situation. You will then choose one of two images that you think best matches what was described. This lets us see whether audio clarity and background noise influence how well participants can interpret the content.",
 
           "imagePath": "/gallery/image-background.png",
           "imageClassName": "explanation-background-image",
@@ -78,7 +78,7 @@
     },
     {
       "sectionTitle": "",
-      "sectionText": "Thank you for taking part! Your responses will help us improve future audio-based surveys and ensure that everyone can participate accurately, regardless of their environment or listening device. ",
+      "sectionText": "Thank you for taking part! Your responses will help us improve future audio-based surveys and ensure accessibility for everyone, regardless of their environment or listening device. ",
       "sectionClassName": "background-section",
       "sectionTitleClassName": "background-section-title",
       "sectionTextClassName": "background-text-content",
@@ -139,7 +139,7 @@
       "label": "Case"
     },
     "caseHybridColumnMiddle": {
-      "title": "Alternative answers",
+      "title": "Alternatives",
       "text": "Below are two alternative answers for this clip.",
       "leftSectionTitle": "Option A",
       "leftSectionButtonlabel": "View details",
@@ -228,9 +228,9 @@
         {
           "questionType": "mc",
           "id": "Q3",
-          "label": "How difficult was the listening task for your current Norwegian language level?",
+          "label": "What is your current Norwegian language level?",
           "optional": false,
-          "choices": ["Very easy", "Manageable", "Hard", "Extremely difficult"],
+          "choices": ["A1", "A2", "B1", "B2", "C1", "C2/ native"],
           "hasCommentBox": false,
           "commentBoxLabel": "Comment to the multiple choice question Q3."
         },
@@ -238,7 +238,7 @@
         {
           "questionType": "likert",
           "id": "Q2",
-          "label": "Likert questions (0= very difficult, 10= Very easy)",
+          "label": "Please answer the following(0 = very easy, 10 = very sifficult",
           "optional": false,
           "likertQuestions": [
             {

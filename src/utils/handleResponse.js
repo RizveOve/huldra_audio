@@ -67,6 +67,7 @@ const pushToBucket = async (jsonString, fileName) => {
     try {
       await fileRef.put(blob);
       console.log("Upload successful");
+      
       break; // Exit the loop on success
     } catch (error) {
       console.log("Upload attempt failed:", error);

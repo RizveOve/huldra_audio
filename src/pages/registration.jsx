@@ -295,14 +295,18 @@ const Registration = ({
         <div className="horizontal-sections">
           <div className="vertical-section">
             <InputTextField
-              label={REACT_APP_registration && REACT_APP_registration["Q1"].label}
+              label={
+                REACT_APP_registration && REACT_APP_registration["Q1"].label
+              }
               id="name"
               onChange={(e) => onNameChange(e)}
               optional={true}
             />
 
             <InputTextField
-              label={REACT_APP_registration && REACT_APP_registration["Q2"].label}
+              label={
+                REACT_APP_registration && REACT_APP_registration["Q2"].label
+              }
               id="email"
               onChange={(e) => onEmailChange(e)}
               optional={true}
@@ -311,7 +315,12 @@ const Registration = ({
               config={REACT_APP_registration}
               label={REACT_APP_registration?.Q11?.label}
               id="Where are you participating from?"
-              choices={["home", "work/office", "Library or study area", "Cafe or public space"]}
+              choices={[
+                "Home",
+                "Work/office",
+                "Library or study area",
+                "Cafe or public space",
+              ]}
               optional={true}
               showTooltip={false}
               tooltipMessage="Choose one or more options"
@@ -321,7 +330,7 @@ const Registration = ({
             <InputMultipleChoice
               config={REACT_APP_registration}
               label={REACT_APP_registration?.Q7?.label}
-              id="Do you experience any hearing difficulties that could affect your ability to listen?"
+              id="Do you experience any hearing difficulties?"
               choices={["Yes", "No"]}
               optional={true}
               showTooltip={false}
@@ -334,7 +343,7 @@ const Registration = ({
               config={REACT_APP_registration}
               label={REACT_APP_registration?.Q4?.label}
               id="What is your age range?"
-              choices={["18-29", "30-39", "40-49", "50 or avobe"]}
+              choices={["18-29", "30-39", "40-49", "50 or above"]}
               optional={true}
               showTooltip={false}
               tooltipMessage="Choose one or more options"
@@ -345,7 +354,7 @@ const Registration = ({
             <InputMultipleChoice
               config={REACT_APP_registration}
               label={REACT_APP_registration?.Q6?.label}
-              id="Which device are you using to listen to the audio?"
+              id="What type of audio device are you using?"
               choices={[
                 "Headphones (over-ear)",
                 "LaptHeadphones (in-ear/earbuds)",

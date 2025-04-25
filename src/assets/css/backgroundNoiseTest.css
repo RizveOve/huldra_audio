@@ -26,7 +26,7 @@ h1 {
 .emoji-scale-vertical {
   display: flex;
   flex-direction: column;
-  align-items: center; /* center the column under the heading */
+  align-items: flex-start; /* ← left-align the column under the heading */
   gap: 1rem; /* vertical space between each option */
   margin-top: 5px;
 }
@@ -46,8 +46,8 @@ h1 {
 /* style the inner block (your .emoji-item-vertical) */
 .emoji-scale-vertical .form-check-label .emoji-item-vertical {
   display: flex;
-  flex-direction: row; /* emoji and note on same line */
-  align-items: center;
+  flex-direction: row; /* emoji and note on the same line */
+  align-items: center; /* vertically center both */
   gap: 0.5rem; /* space between emoji and text */
   padding: 0.5rem 1rem;
   border-radius: 0.25rem;
@@ -55,7 +55,7 @@ h1 {
   transition: background-color 0.2s ease;
 }
 
-/* when the radio is checked, color the block via the inline CSS var */
+/* when the radio is checked, color the block via its inline CSS var */
 .emoji-scale-vertical
   .form-check-input:checked
   + .form-check-label

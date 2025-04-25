@@ -6,11 +6,11 @@ import "../assets/css/demonstration.css";
 import InputMultipleChoice from "../minor-components/inputMultipleChoice";
 
 const emojiData = [
-  { id: 1, emoji: "😡", note: "intrusive", color: "#ff4d4d" },
+  { id: 1, emoji: "😡", note: "Intrusive", color: "#ff4d4d" },
   { id: 2, emoji: "😞", note: "Noticeable", color: "#ff9900" },
-  { id: 3, emoji: "😐", note: "Little noticeable", color: "#ffd633" },
+  { id: 3, emoji: "😐", note: "Slightly noticeable", color: "#ffd633" },
   { id: 4, emoji: "🙂", note: "Not noticeable", color: "#66b3ff" },
-  { id: 5, emoji: "😃", note: "No Noise", color: "#66ff66" },
+  { id: 5, emoji: "😃", note: "No noise", color: "#66ff66" },
 ];
 
 const BackgroundTest = () => {

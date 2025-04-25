@@ -95,7 +95,8 @@ const Survey = ({
   useEffect(() => {
     // only works on case pages
     if (history.location.pathname.startsWith("/survey/case")) {
-      const allowProceedingWithoutAnswering = REACT_APP_general["allowProceedingWithoutAnswering"];
+      const allowProceedingWithoutAnswering =
+        REACT_APP_general["allowProceedingWithoutAnswering"];
       if (allowProceedingWithoutAnswering) {
         setDisableNextButton(false);
       }
@@ -155,7 +156,8 @@ const Survey = ({
   };
 
   const handleEndSurvey = () => {
-    const FeedbackFormAnswers = JSON.parse(localStorage.getItem("FeedbackFormAnswers")) || {};
+    const FeedbackFormAnswers =
+      JSON.parse(localStorage.getItem("FeedbackFormAnswers")) || {};
     if (REACT_APP_summaryAndFeedback["feedbackForm"].display === false) {
       setOpenEndDialog(true);
     } else {
@@ -164,7 +166,11 @@ const Survey = ({
         FeedbackFormAnswers
       ).hasError;
       if (hasError) {
-        toastError("Please verify mandatory fields.", "top-center", "req-error");
+        toastError(
+          "Please verify mandatory fields.",
+          "top-center",
+          "req-error"
+        );
       } else {
         setOpenEndDialog(true);
       }
@@ -207,7 +213,13 @@ const Survey = ({
       activeYears,
     };
 
-    await handleGetParticipantId(e, formInfo, history, Version, setRouteIsAllowed);
+    await handleGetParticipantId(
+      e,
+      formInfo,
+      history,
+      Version,
+      setRouteIsAllowed
+    );
   };
 
   const footerButtonProps = getButtonProps({

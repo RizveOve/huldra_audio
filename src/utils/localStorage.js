@@ -15,7 +15,6 @@ const logSessionEvent = (ButtonType, Location) => {
   const tail = {
     Location,
     ButtonType,
-    Timestamp,
   };
   SessionEvents = SessionEvents !== null ? [...SessionEvents, tail] : new Array(tail);
   localStorage.setItem("SessionEvents", JSON.stringify(SessionEvents));
@@ -42,4 +41,5 @@ const logSessionInfo = (SessionComplete, LastVisitedPage, MaxCaseNumber) => {
   localStorage.setItem("SessionInfo", JSON.stringify(SessionInfo));
 };
 
-export { pushToLocalStorage, logSessionEvent, logSessionInfo };
+export { logSessionEvent, logSessionInfo, pushToLocalStorage };
+

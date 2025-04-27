@@ -357,7 +357,7 @@ const Registration = ({
               id="What type of audio device are you using?"
               choices={[
                 "Headphones (over-ear)",
-                "LaptHeadphones (in-ear/earbuds)",
+                "Headphones (in-ear/earbuds)",
                 "Built-in laptop/desktop speakers",
                 "External/standalone speakers",
               ]}

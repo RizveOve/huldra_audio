@@ -6,7 +6,6 @@ import { conditionalInitializeFirebase } from "../handleStorageConfig";
 import { isValidEmail as validateEmail } from "../inputValidation";
 import { fetchCases } from "../loadAssets";
 import { logSessionInfo } from "../localStorage";
-import { generateTimeStamp } from "../timestamp";
 import { toastError } from "../toast";
 
 /**
@@ -122,7 +121,6 @@ const handleSessionInfo = async (
     {
       Location: location,
       ButtonType: buttonType,
-      Timestamp: generateTimeStamp(),
     },
   ];
 
